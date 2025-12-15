@@ -50,11 +50,6 @@ PDF Processing: PDFMiner, pdf2image
 
 Data Handling: Pandas, NumPy
 
-📂 Project Structure
-Intelligent-Resume-Screening-System/
-├── app.py
-├── README.md
-└── requirements.txt
 
 ⚙️ Installation & Run
 pip install -r requirements.txt
@@ -85,12 +80,3 @@ Resume preview excerpts
 
 Downloadable CSV file
 
-🔮 Future Enhancements
-
-Skill extraction and scoring
-
-Experience-based ranking
-
-Multi-language resume support
-
-Cloud deployment
