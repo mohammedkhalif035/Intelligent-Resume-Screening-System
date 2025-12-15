@@ -1,82 +1,195 @@
-# Intelligent-Resume-Screening-System
+🧠 Intelligent Resume Screening System
+📌 Project Overview
 
-📌 Overview
+In today’s competitive recruitment environment, organizations receive hundreds of resumes for a single job opening. Manual screening is inefficient, time-consuming, and prone to bias.
+The Intelligent Resume Screening System is an AI-powered application designed to automate resume analysis, classification, and ranking using advanced Natural Language Processing (NLP), Machine Learning, and Deep Learning techniques.
 
-The Intelligent Resume Screening System is an AI-powered application that automates resume analysis, classification, and ranking. It helps recruiters efficiently screen large volumes of resumes by extracting text from PDF files (including scanned resumes), classifying them into job categories, and ranking candidates based on their relevance to a given job description using semantic similarity.
+The system extracts textual data from resumes (including scanned PDFs), classifies them into relevant job categories, and ranks candidates based on their semantic similarity to a given job description.
 
-The system reduces manual effort, improves accuracy, and supports fair and efficient hiring decisions.
+🎯 Project Objectives
 
-🎯 Objectives
+Automate the resume screening process
 
-Automate resume screening
-
-Extract text from digital and scanned resumes
+Extract accurate information from both digital and scanned resumes
 
 Classify resumes into predefined job roles
 
-Match resumes with job descriptions
+Match resumes intelligently with job descriptions
 
-Rank candidates based on relevance
+Rank candidates based on relevance score
 
-Improve recruitment efficiency
+Reduce recruiter workload and improve hiring efficiency
 
 🚀 Key Features
+📑 Resume Upload
 
-Upload multiple PDF resumes
+Supports multiple PDF resumes
 
-Text extraction using PDFMiner and EasyOCR
+Handles both text-based and scanned resumes
 
-Resume and job classification using TF-IDF + Logistic Regression
+🧠 Smart Text Extraction
 
-Semantic resume ranking using Sentence-BERT (SBERT)
+PDFMiner for digital resumes
 
-Interactive Streamlit web interface
+EasyOCR + OpenCV for scanned resumes
 
-Downloadable CSV results
+Automatic fallback to OCR when needed
+
+🏷 Resume Classification
+
+TF-IDF vectorization
+
+Logistic Regression classifier
+
+Predicts job category for resumes and job description
+
+🔍 Intelligent Resume Ranking
+
+Uses Sentence-BERT (SBERT)
+
+Semantic similarity using cosine similarity
+
+Displays top N relevant candidates
+
+🖥 Interactive Web Interface
+
+Built with Streamlit
+
+Real-time results
+
+Downloadable CSV outputs
 
 🛠 Technology Stack
+Programming Language
 
-Language: Python
+Python 3
 
-Frontend: Streamlit
+Libraries & Tools
+Category	Technologies
+Frontend	Streamlit
+NLP	TF-IDF, Sentence-BERT
+ML	Logistic Regression
+OCR	EasyOCR, OpenCV
+DL	PyTorch
+Transformers	Hugging Face
+PDF Handling	PDFMiner, pdf2image
+Data Processing	Pandas, NumPy
+📂 Project Structure
+Intelligent-Resume-Screening-System/
+│
+├── app.py
+│   └── Main Streamlit application
+│
+├── requirements.txt
+│   └── Project dependencies
+│
+├── README.md
+│   └── Documentation
+│
+├── sbert_finetuned/
+│   └── Fine-tuned SBERT model
+│
+└── sample_data/
+    ├── resumes/
+    │   └── Sample PDF resumes
+    └── labeled_dataset.csv
+        └── Training dataset
 
-ML & NLP: TF-IDF, Logistic Regression, SBERT
+⚙️ Installation & Setup
+Step 1: Clone Repository
+git clone https://github.com/your-username/Intelligent-Resume-Screening-System.git
+cd Intelligent-Resume-Screening-System
 
-OCR: EasyOCR, OpenCV
+Step 2: Create Virtual Environment
+python -m venv venv
+source venv/bin/activate
+# Windows: venv\Scripts\activate
 
-Deep Learning: PyTorch
-
-PDF Processing: PDFMiner, pdf2image
-
-Data Handling: Pandas, NumPy
-
-
-⚙️ Installation & Run
+Step 3: Install Requirements
 pip install -r requirements.txt
+
+▶️ Run the Application
 streamlit run app.py
 
 
-Open: http://localhost:8501
+Access at:
 
-🔄 Workflow
+http://localhost:8501
+
+📊 Dataset Description
+Labeled Resume Dataset (CSV)
+
+Used to train the resume classification model.
+
+Format:
+
+Category,Resume
+Data Science,Experience in Python, ML, and analytics...
+Web Development,Frontend developer with React skills...
+
+🔄 System Workflow
 
 Upload labeled dataset
 
-Upload PDF resumes
+Upload multiple resumes (PDF)
 
 Enter job description
 
-Extract and preprocess text
+Extract resume text
 
-Classify resumes and job role
+Preprocess and clean data
+
+Train classification model
+
+Predict job & resume categories
+
+Filter relevant resumes
 
 Rank resumes using SBERT
 
+Display top candidates
+
+🧪 Algorithms Used
+TF-IDF
+
+Converts text into numerical vectors
+
+Highlights relevant keywords
+
+Logistic Regression
+
+Predicts job categories
+
+Efficient and interpretable
+
+Sentence-BERT (SBERT)
+
+Captures contextual meaning
+
+Improves matching accuracy
+
 📈 Output
 
-Ranked resumes with similarity scores
+Ranked resumes with similarity score
 
 Resume preview excerpts
 
-Downloadable CSV file
+Categorized resume CSV download
 
+✅ Advantages
+
+Reduces manual screening effort
+
+Handles unstructured resume formats
+
+Supports scanned PDFs
+
+Scalable and efficient
+
+⚠️ Limitations
+
+Requires labeled training dataset
+
+OCR accuracy depends on document quality
+
+Training may be slow without GPU
