@@ -1,0 +1,26 @@
+
+Job Title: Data Scientist
+
+Location: Remote
+
+Job Description:
+We are looking for a skilled Data Scientist to help us analyze large volumes of data, generate insights, and build predictive models to support business decision-making. The ideal candidate should have strong experience in machine learning, data preprocessing, statistical modeling, and data visualization.
+
+Responsibilities:
+- Work with large, complex datasets to derive actionable insights.
+- Build and deploy machine learning models for prediction and classification tasks.
+- Perform data wrangling, cleaning, and preprocessing using Python or R.
+- Create dashboards and reports using tools like Power BI, Tableau, or Matplotlib/Seaborn.
+- Collaborate with engineering and business teams to integrate data science solutions.
+- Present findings to stakeholders in a clear and concise manner.
+
+Requirements:
+- Bachelor's or Master's degree in Data Science, Computer Science, Statistics, or related field.
+- Proficiency in Python (NumPy, Pandas, scikit-learn, TensorFlow/PyTorch).
+- Experience with SQL and cloud platforms (AWS, GCP, or Azure).
+- Strong analytical and problem-solving skills.
+- Excellent communication and teamwork abilities.
+
+Preferred:
+- Experience in NLP, time series analysis, or deep learning.
+- Familiarity with big data tools like Spark or Hadoop.
