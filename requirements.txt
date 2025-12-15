@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scikit-learn
+torch
+transformers
+sentence-transformers
+easyocr
+opencv-python
+pdfminer.six
+pdf2image
+Pillow
